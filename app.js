@@ -4,9 +4,9 @@
     const storeImages = document.querySelectorAll('.store-item')
 
     buttons.forEach((button) => {
-        button.addEventListener('click', (evt) => {
+        button.addEventListener('click', (e) => {
             e.preventDefault()
-            const filter = evt.target.dataset.filter
+            const filter = e.target.dataset.filter
 
             storeImages.forEach((item) => {
                 if (filter === 'all') {
